@@ -28,7 +28,8 @@
 		B9D85DE01906553800F041F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D85DC21906553800F041F1 /* UIKit.framework */; };
 		B9D85DE81906553800F041F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D85DE61906553800F041F1 /* InfoPlist.strings */; };
 		B9D85DEA1906553800F041F1 /* OpenCVTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D85DE91906553800F041F1 /* OpenCVTestTests.m */; };
-		B9D85DF41906560300F041F1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D85DF31906560300F041F1 /* opencv2.framework */; };
+		B9E9E4C7190ADBD9002686AC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E9E4C6190ADBD9002686AC /* opencv2.framework */; };
+		B9E9E4C8190ADBDA002686AC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E9E4C6190ADBD9002686AC /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,7 @@
 		B9D85DE51906553800F041F1 /* OpenCVTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenCVTestTests-Info.plist"; sourceTree = "<group>"; };
 		B9D85DE71906553800F041F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9D85DE91906553800F041F1 /* OpenCVTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVTestTests.m; sourceTree = "<group>"; };
-		B9D85DF31906560300F041F1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
+		B9E9E4C6190ADBD9002686AC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D85DF41906560300F041F1 /* opencv2.framework in Frameworks */,
 				B98A9FA01906628B002D9AF3 /* AVFoundation.framework in Frameworks */,
 				B98A9F9E19066287002D9AF3 /* AssetsLibrary.framework in Frameworks */,
 				B98A9F9C1906627D002D9AF3 /* Accelerate.framework in Frameworks */,
 				B9D85DC11906553800F041F1 /* CoreGraphics.framework in Frameworks */,
 				B98A9FA5190662C1002D9AF3 /* CoreImage.framework in Frameworks */,
+				B9E9E4C7190ADBD9002686AC /* opencv2.framework in Frameworks */,
 				B98A9FA6190662C1002D9AF3 /* CoreMedia.framework in Frameworks */,
 				B98A9FA7190662C1002D9AF3 /* CoreVideo.framework in Frameworks */,
 				B98A9FA8190662C1002D9AF3 /* QuartzCore.framework in Frameworks */,
@@ -96,6 +97,7 @@
 			files = (
 				B9D85DDE1906553800F041F1 /* XCTest.framework in Frameworks */,
 				B9D85DE01906553800F041F1 /* UIKit.framework in Frameworks */,
+				B9E9E4C8190ADBDA002686AC /* opencv2.framework in Frameworks */,
 				B9D85DDF1906553800F041F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +134,7 @@
 				B98A9F9F1906628B002D9AF3 /* AVFoundation.framework */,
 				B98A9F9D19066287002D9AF3 /* AssetsLibrary.framework */,
 				B98A9F9B1906627D002D9AF3 /* Accelerate.framework */,
-				B9D85DF31906560300F041F1 /* opencv2.framework */,
+				B9E9E4C6190ADBD9002686AC /* opencv2.framework */,
 				B9D85DBE1906553800F041F1 /* Foundation.framework */,
 				B9D85DC01906553800F041F1 /* CoreGraphics.framework */,
 				B9D85DC21906553800F041F1 /* UIKit.framework */,
@@ -414,6 +416,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/panf/Documents,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVTest/OpenCVTest-Prefix.pch";
@@ -431,6 +434,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/panf/Documents,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVTest/OpenCVTest-Prefix.pch";
@@ -448,6 +452,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVTest/OpenCVTest-Prefix.pch";
@@ -470,6 +475,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCVTest/OpenCVTest-Prefix.pch";
